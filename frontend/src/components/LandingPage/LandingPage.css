@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+.Landing-class {
+  background-color: #dad6ff;
+  min-height: calc(100vh - 53px);
+  display: flex;
+  align-items: center;
+}
+
+.Landing-content {
+  padding: 0 30px;
+  max-width: 680px;
+}
+
+.Landing-text-header {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  color: #1a1a2e;
+}
+
+.Landing-text-body {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #444;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.Landing-input-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Landing-input-field {
+  flex: 1;
+  padding: 12px 16px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 16px;
+  border: 2.5px solid #1a1a2e;
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.Landing-input-field:focus {
+  border-color: #6c63ff;
+}
+
+.Landing-input-field:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.Landing-input-button {
+  padding: 12px 24px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #1a1a2e;
+  color: #dad6ff;
+  border: 2.5px solid #1a1a2e;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.Landing-input-button:hover:not(:disabled) {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+  color: #fff;
+}
+
+.Landing-input-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.Landing-error {
+  margin-top: 14px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 14px;
+  color: #c0392b;
+  font-weight: 500;
+}
+
+.Landing-loading {
+  margin-top: 24px;
+}
+
+.Landing-loading-bar {
+  width: 100%;
+  max-width: 400px;
+  height: 6px;
+  background: #c0baf0;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.Landing-loading-fill {
+  height: 100%;
+  width: 40%;
+  background: #6c63ff;
+  border-radius: 99px;
+  animation: loadingSlide 1.2s ease-in-out infinite;
+}
+
+@keyframes loadingSlide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
+
+.Landing-loading-text {
+  margin-top: 10px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 14px;
+  color: #555;
+  font-weight: 300;
+}

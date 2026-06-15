@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+.RP-class {
+  background-color: #dad6ff;
+  min-height: calc(100vh - 53px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.RP-card {
+  background: #fff;
+  border: 2.5px solid #1a1a2e;
+  border-radius: 16px;
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  box-shadow: 4px 4px 0px #1a1a2e;
+}
+
+.RP-topic {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6c63ff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+}
+
+.RP-emoji {
+  font-size: 52px;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.RP-score-label {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.RP-score {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1;
+}
+
+.RP-score-total {
+  font-size: 32px;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.RP-pct {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #6c63ff;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.RP-bar-wrap {
+  margin-bottom: 24px;
+}
+
+.RP-bar {
+  width: 100%;
+  height: 10px;
+  background: #e0deff;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.RP-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6c63ff, #a89cff);
+  border-radius: 99px;
+  transition: width 0.6s ease;
+}
+
+.RP-remark {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 32px;
+  line-height: 1.4;
+}
+
+.RP-restart-button {
+  display: inline-block;
+  padding: 13px 28px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background: #1a1a2e;
+  color: #dad6ff;
+  border: 2.5px solid #1a1a2e;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.RP-restart-button:hover {
+  background: #6c63ff;
+  border-color: #6c63ff;
+  color: #fff;
+}
